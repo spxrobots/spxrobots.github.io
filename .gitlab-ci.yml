@@ -3,7 +3,11 @@ image: busybox
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+    - mkdir .public
+    - cp -r ./* .public
+    - rm -rf public
+    - mv .public public
+    - echo 'Nothing more to do...'
   artifacts:
     paths:
     - public
