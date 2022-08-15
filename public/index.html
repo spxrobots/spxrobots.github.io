@@ -1,92 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>SPX Robotics</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SPX Robotics</title>
+  <link rel="stylesheet" href="./spx.css"/>
 </head>
 <body>
 <header>
-    <img alt="St Pius X College Robotics Themed Crest" src="spx-robotics.png"/>
-    <h1>SPX Robotics Club Website</h1>
-    <nav>
-        <ul>
-            <li><a href="https://gitlab.com/spx-robotics">GitLab Group</a></li>
-            <li><a href="https://www.robocupjunior.org.au/wp-content/uploads/2022/02/Official-2022-RCJA-Soccer-Rules-SSTC.pdf">Soccer Rules 2022</a></li>
-            <li><a href="https://www.robocupjunior.org.au/wp-content/uploads/2022/02/2022-Kicker-Power-Measuring-Device.pdf">Kicker Power Measuring 2022</a></li>
-            <li><a href="https://tools.robocupjunior.org.au/soccersim/">RCJA SoccerSim</a></li>
-            <li><a href="https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29">PixyCam Setup for Arduino</a></li>
-        </ul>
-    </nav>
+  <img alt="Crowned shield crest with cog-wheel, motto Fide et Labore." src="./img/robotics.png" width="200px"/>
+  <h1>SPX Robotics Club 🤖</h1>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Main</a></li>
+      <li><a href="./pixy.html">Pixy</a></li>
+    </ul>
+  </nav>
 </header>
 <main>
-    <section>
-        <h2>Pixy Example Code</h2>
-<pre><code>#include &lt;SPI.h&gt;
-#include &lt;Pixy.h&gt;
-
-#define BALL_SIGNATURE 1
-
-typedef struct {
-    int16_t x; // centred horizontal position in frame (-160 to 159)
-    int16_t y; // centred horizontal position in frame (-100 to 99)
-    uint16_t width; // width (1 to 320)
-    uint16_t height; // height (1 to 200)
-    uint16_t size; // average of width and height
-} Ball;
-
-Pixy pixy;
-Ball ball;
-
-// finds the biggest block matching the ball colour
-bool findBall() {
-    uint16_t nBlocks = pixy.getBlocks();
-    Block* block = NULL;
-    int maxArea = 0;
-    // go through each block the pixy found
-    for (int i = 0; i < nBlocks; ++i) {
-        // get a pointer to the block array element
-        Block* b = &pixy.blocks[i];
-        int area = b->width * b->height;
-        // if the ball looks like a ball (right colour) and is bigger than the last one
-        // set block to be the ball
-        if (b.signature == BALL_SIGNATURE && area > maxArea) {
-            block = b;
-            maxArea = area;
-        }
-    }
-    // if we did find a ball
-    // compute data so it is useful (ball struct)
-    if (block != NULL)
-        ball.x = (int16_t)(block->x + block->width / 2) - 160;
-        ball.y = (int16_t)(block->y + block->height / 2) - 100;
-        ball.width = block->width;
-        ball.height = block->height;
-        ball.size = (w + h) / 2;
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-void setup() {
-    pixy.init();
-}
-
-void loop() {
-    if (findBall() && ball.size > 10) {
-        if (ball.x < -50) {
-            // go left
-        } else if (ball.x > 50) {
-            // go right
-        } else {
-            // ball in the middle
-        }
-    }
-}</code></pre>
-    </section>
+  <h2>Welcome to the SPX Robotics Club homepage!</h2>
+  <ul>
+    <li><a href="https://www.robocupjunior.org.au/wp-content/uploads/2022/02/Official-2022-RCJA-Soccer-Rules-SSTC.pdf">Soccer Rules 2022</a></li>
+    <li><a href="https://www.robocupjunior.org.au/wp-content/uploads/2022/02/2022-Kicker-Power-Measuring-Device.pdf">Kicker Power Measuring 2022</a></li>
+    <li><a href="https://tools.robocupjunior.org.au/soccersim/">RCJA SoccerSim</a></li>
+  </ul>
+  <h2>Current Projects</h2>
+  <ul>
+    <li>GitLab Code Repository - Pilot Programme
+      <ul>
+        <li>SSH key management</li>
+      </ul>
+    </li>
+    <li>Reference Implementation RoboCup Opens
+      <ul>
+        <li>Pixy + Vision</li>
+        <li>Movement</li>
+        <li>Gameplay</li>
+      </ul>
+    </li>
+    <li>Robotics Website Development 🏗️🚧
+      <ul>
+        <li>Page description of projects</li>
+        <li>Images</li>
+      </ul>
+    </li>
+    <li>EV3 First Lego League - Cargo Connect Challenges</li>
+  </ul>
+  <h2>Previous Work</h2>
+  <ul>
+    <li>EV3 Robotic Hand</li>
+    <li>Quadcopter</li>
+    <li>Elephant</li>
+    <li>Dot Matrix Welcome Display</li>
+    <li>Snake Game</li>
+    <li>RoboCup Opens Competition Robots</li>
+  </ul>
 </main>
 </body>
 </html>
