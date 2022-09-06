@@ -44,14 +44,34 @@ header > img {
     height: 100%;
 }
 
-h1 {
-    margin: auto;
-    margin-left: 0;
+header > div {
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+header > div::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, #123 80%);
+}
+
+h1 {
+    display: flex;
+    overflow: auto;
+    margin: 0;
+    padding-right: 1.5rem;
     font-family: "Lexend", sans-serif;
     font-size: 3rem;
     color: white;
     white-space: nowrap;
+    align-items: center;
 }
 
 nav {
@@ -59,6 +79,29 @@ nav {
     background-color: #db1;
     color: black;
     font-family: "Lexend", sans-serif;
+    position: relative;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, #db1 80%);
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 2rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, #db1 80%);
 }
 
 nav > ul {
@@ -67,6 +110,7 @@ nav > ul {
     flex-wrap: nowrap;
     overflow: auto;
     margin: 0;
+    padding-right: 1rem;
 }
 
 nav > ul > li {
