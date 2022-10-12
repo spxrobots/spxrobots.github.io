@@ -1,30 +1,15 @@
-# We do some more advanced command line stuff, so use a minimal linux
-image: alpine
+image: debian
 
 pages:
   stage: deploy
   script:
-  - uname -a
-  # Log the time
-  - date -R
-  # Enable ipv6
-  - echo "ipv6" >> /etc/modules
-  # Update package list
-  - apk update
-  # Install packages
-  - apk add bash curl gcompat libc6-compat libgcc
-  # Log the time
-  - date -R
-  # Install htmlq (for scraping gdrive)
+  - apt update
+  - apt install bash curl
   - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
   - tar -xf 'htmlq-x86_64-linux.tar.gz'
   - chmod +x htmlq
   - export PATH="$PWD:$PATH"
-  - date -R
-  # Pull images from drive
   - bash gdrive-img.bash
-  # Log time
-  - date -R
   artifacts:
     paths:
     - public
