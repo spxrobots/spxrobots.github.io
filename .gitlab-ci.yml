@@ -1,10 +1,16 @@
-image: rust
+image: busybox
 
 pages:
   stage: deploy
   script:
-  - cargo install htmlq
+  - date -R
+  - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
+  - tar -xf 'htmlq-x86_64-linux.tar.gz'
+  - chmod +x htmlq
+  - export PATH="$PWD:$PATH"
+  - date -R
   - bash gdrive-img.bash
+  - date -R
   artifacts:
     paths:
     - public
