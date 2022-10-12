@@ -6,8 +6,10 @@ pages:
   script:
   # Log the time
   - date -R
-  # Enable networking
+  # Enable ipv6
   - echo "ipv6" >> /etc/modules
+  # Enable community repository (for htmlq)
+  - echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/community" >> /etc/apk/repositories
   # Update package list
   - apk update
   # Install packages
