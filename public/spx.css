@@ -168,8 +168,8 @@ img {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
     gap: 1rem;
-    padding: 1rem;
-    margin: 0 auto;
+    padding: 0 1rem;
+    margin: 1rem auto;
     align-content: center;
 }
 
