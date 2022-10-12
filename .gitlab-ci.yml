@@ -13,6 +13,7 @@ pages:
   # Install packages
   - apk add curl
   - apk add bash
+  - apk add strace
   # Log the time
   - date -R
   # Install htmlq (for scraping gdrive)
