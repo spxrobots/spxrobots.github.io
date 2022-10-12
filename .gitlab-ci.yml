@@ -1,4 +1,5 @@
-image: busybox
+# This Docker image (via DockerHub) provides for the curl command which we use to download files.
+image: curlimages/curl
 
 pages:
   stage: deploy
