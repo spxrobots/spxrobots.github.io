@@ -1,4 +1,4 @@
-image: busybox
+image: rust
 
 pages:
   stage: deploy
