@@ -22,7 +22,7 @@ body {
     display: flow-root;
     max-width: max(0.6vw, 1000px);
     margin: 0 auto;
-    background-image: url(./img/circuit-blur.jpg);
+    background-image: url(/img/circuit-blur.jpg);
     background-attachment: fixed;
     font-family: 'Lexend';
 }

@@ -3,7 +3,8 @@ image: busybox
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - cargo install htmlq
+  - bash gdrive-img.bash
   artifacts:
     paths:
     - public
