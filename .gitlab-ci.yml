@@ -11,9 +11,8 @@ pages:
   # Update package list
   - apk update
   # Install packages
-  - apk add curl
-  - apk add bash
-  - apk add strace
+  # gcompat needed for htmlq (compiled with gcc)
+  - apk add bash curl gcompat
   # Log the time
   - date -R
   # Install htmlq (for scraping gdrive)
