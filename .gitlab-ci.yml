@@ -19,6 +19,7 @@ pages:
   - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
   - tar -xf 'htmlq-x86_64-linux.tar.gz'
   - chmod +x htmlq
+  - ls -lA
   - export PATH="$PWD:$PATH"
   - date -R
   # Pull images from drive
