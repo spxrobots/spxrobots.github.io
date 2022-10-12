@@ -1,16 +1,24 @@
-# This Docker image (via DockerHub) provides for the curl command which we use to download files.
-image: curlimages/curl
+# We do some more advanced command line stuff, so use a minimal linux
+image: alpine
 
 pages:
   stage: deploy
   script:
+  # Log the time
   - date -R
-  - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
-  - tar -xf 'htmlq-x86_64-linux.tar.gz'
-  - chmod +x htmlq
-  - export PATH="$PWD:$PATH"
+  # Enable networking
+  - echo "ipv6" >> /etc/modules
+  # Update package list
+  - apk update
+  # Install packages
+  - apk add curl
+  - apk add bash
+  - apk add htmlq
+  # Log the time
   - date -R
+  # Pull images from drive
   - bash gdrive-img.bash
+  # Log time
   - date -R
   artifacts:
     paths:
