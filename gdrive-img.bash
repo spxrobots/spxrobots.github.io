@@ -7,7 +7,7 @@ mkdir -p "$TARGET"
 echo "Listing Google Drive folder ..."
 gdrive="$(curl -sSf 'https://drive.google.com/drive/folders/1_qviIV62bztqS3ALrsvd5RQR1k7DYhPp')"
 
-files="$(paste <(echo "$gdrive" | htmlq -a data-id '.iZmuQc>c-wiz>div') <(echo "$gdrive" | htmlq -t '.iZmuQc>c-wiz>div'))"
+files="$(paste <(echo "$gdrive" | strace htmlq -a data-id '.iZmuQc>c-wiz>div') <(echo "$gdrive" | htmlq -t '.iZmuQc>c-wiz>div'))"
 
 echo "$files" | {
   while IFS=$'\t' read id name rest
