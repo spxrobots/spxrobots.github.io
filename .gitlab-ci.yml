@@ -11,8 +11,7 @@ pages:
   # Update package list
   - apk update
   # Install packages
-  # gcompat needed for htmlq (compiled with gcc)
-  - apk add bash curl gcompat
+  - apk add bash bash gcompat libc6-compat
   # Log the time
   - date -R
   # Install htmlq (for scraping gdrive)
