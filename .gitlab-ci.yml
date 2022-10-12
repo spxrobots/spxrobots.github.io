@@ -20,10 +20,11 @@ pages:
   - tar -xf 'htmlq-x86_64-linux.tar.gz'
   - chmod +x htmlq
   - ls -lA
+  - echo "$PWD:$PATH"
   - export PATH="$PWD:$PATH"
   - date -R
   # Pull images from drive
-  - bash gdrive-img.bash
+  - PATH="$PWD:$PATH" bash gdrive-img.bash
   # Log time
   - date -R
   artifacts:

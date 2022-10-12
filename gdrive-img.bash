@@ -10,7 +10,7 @@ gdrive="$(curl -sSf 'https://drive.google.com/drive/folders/1_qviIV62bztqS3ALrsv
 files="$(paste <(echo "$gdrive" | htmlq -a data-id '.iZmuQc>c-wiz>div') <(echo "$gdrive" | htmlq -t '.iZmuQc>c-wiz>div'))"
 
 echo "$files" | {
-  while read id name rest
+  while IFS=$'\t' read id name rest
   do
     echo "Downloading $name"
     curl -sSfL "https://drive.google.com/uc?id=$id" > "$TARGET/$name"
