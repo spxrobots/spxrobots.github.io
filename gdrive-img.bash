@@ -3,12 +3,16 @@
 TARGET="public/img"
 
 is_folder () {
-  if grep -qiv 'folder'
-  then
-    echo "folder"
-  else
-    echo "file"
-  fi
+  local data rest
+  while read data rest
+  do
+    if echo "$data" | grep -qi 'folder'
+    then
+      echo "folder"
+    else
+      echo "file"
+    fi
+  done
 }
 
 fetch_folder () {
@@ -24,10 +28,12 @@ fetch_folder () {
   # <ID> \t <NAME> \t <FOLDERTYPE>
   local files="$(
     paste \
-      <(echo "$gfolder" | htmlq -a data-id '.iZmuQc>c-wiz>div' | cat) \
-      <(echo "$gfolder" | htmlq -a data-tooltip '.iZmuQc>c-wiz>div div[data-tooltip]' | cat) \
-      <(echo "$gfolder" | htmlq '.iZmuQc>c-wiz>div' | is_folder)
+      <(echo "$gfolder\n" | htmlq -a data-id '.iZmuQc>c-wiz>div') \
+      <(echo "$gfolder\n" | htmlq -a data-tooltip '.iZmuQc>c-wiz>div div[data-tooltip]') \
+      <(echo "$gfolder\n" | htmlq '.iZmuQc>c-wiz>div' | is_folder)
   )"
+
+  echo "$files"
 
   if [ "$n_files" = 0 ]
   then
@@ -37,11 +43,12 @@ fetch_folder () {
     echo "Folder contains $n_files items"
   fi
 
+  return
+
   echo "$files" | {
     local id name foldertype rest
     while IFS=$'\t' read id name foldertype rest
     do
-      echo "Downloading $foldertype \`$name\`"
       if [ "$foldertype" = "folder" ]
       then
         fetch_folder "$target_dir/$name" "$id"
@@ -49,7 +56,7 @@ fetch_folder () {
         curl -sSfL "https://drive.google.com/uc?id=$id" > "$target_dir/$name"
         if [ "$?" != 0 ]
         then
-          echo "curl failed"
+          echo "Error downloading $name"
           exit 1
         fi
       fi
