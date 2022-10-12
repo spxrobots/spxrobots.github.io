@@ -22,7 +22,7 @@ body {
     display: flow-root;
     max-width: max(0.6vw, 1000px);
     margin: 0 auto;
-    background-image: url(/img/circuit-blur.jpg);
+    background-image: url(./img/circuit-blur.jpg);
     background-attachment: fixed;
     font-family: 'Lexend';
 }
@@ -60,6 +60,7 @@ header > div::after {
     width: 2rem;
     height: 100%;
     background: linear-gradient(to right, transparent 0%, #123 80%);
+    pointer-events: none;
 }
 
 h1 {
@@ -91,6 +92,7 @@ nav::before {
     top: 0;
     left: 0;
     background: linear-gradient(to left, transparent 0%, #db1 80%);
+    pointer-events: none;
 }
 
 nav::after {
@@ -102,6 +104,7 @@ nav::after {
     top: 0;
     right: 0;
     background: linear-gradient(to right, transparent 0%, #db1 80%);
+    pointer-events: none;
 }
 
 nav > ul {
@@ -157,6 +160,44 @@ footer {
 
 img {
     max-width: 100%;
+}
+
+
+.calendar {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.calendar > li {
+    list-style: none;
+    background-color: #0003;
+    border-radius: 0.5rem;
+    height: 9rem;
+    overflow: hidden;
+}
+
+.calendar > li.done {
+    opacity: 0.4;
+}
+
+.calendar > li.done .time {
+    background-color: #556;
+}
+
+.calendar p {
+    padding: 0.5rem 0.7rem;
+    margin: 0;
+}
+
+.calendar .time {
+    background-color: #b51;
+    color: white;
+    font-weight: bold;
 }
 
 @media (max-width: 500px) {
