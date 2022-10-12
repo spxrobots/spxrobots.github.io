@@ -8,15 +8,18 @@ pages:
   - date -R
   # Enable ipv6
   - echo "ipv6" >> /etc/modules
-  # Enable community repository (for htmlq)
-  - echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/community" >> /etc/apk/repositories
   # Update package list
   - apk update
   # Install packages
   - apk add curl
   - apk add bash
-  - apk add htmlq
   # Log the time
+  - date -R
+  # Install htmlq (for scraping gdrive)
+  - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
+  - tar -xf 'htmlq-x86_64-linux.tar.gz'
+  - chmod +x htmlq
+  - export PATH="$PWD:$PATH"
   - date -R
   # Pull images from drive
   - bash gdrive-img.bash
