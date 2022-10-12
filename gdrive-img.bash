@@ -33,8 +33,6 @@ fetch_folder () {
       <(echo "$gfolder\n" | htmlq '.iZmuQc>c-wiz>div' | is_folder)
   )"
 
-  echo "$files"
-
   if [ "$n_files" = 0 ]
   then
     echo "Empty folder"
@@ -43,7 +41,7 @@ fetch_folder () {
     echo "Folder contains $n_files items"
   fi
 
-  return
+  echo "$files"
 
   echo "$files" | {
     local id name foldertype rest
