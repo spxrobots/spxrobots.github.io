@@ -4,6 +4,7 @@ image: alpine
 pages:
   stage: deploy
   script:
+  - uname -a
   # Log the time
   - date -R
   # Enable ipv6
@@ -11,7 +12,7 @@ pages:
   # Update package list
   - apk update
   # Install packages
-  - apk add bash curl gcompat libc6-compat
+  - apk add bash curl gcompat libc6-compat libgcc
   # Log the time
   - date -R
   # Install htmlq (for scraping gdrive)
