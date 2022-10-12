@@ -1,6 +1,6 @@
 image: debian
 
-build:
+.build-script: &build-script
   script:
   - apt update
   - apt install --quiet --assume-yes bash curl
@@ -9,19 +9,17 @@ build:
   - chmod +x htmlq
   - export PATH="$PWD:$PATH"
   - bash gdrive-img.bash
+
+build:
+  script:
+  - *build-script
   rules:
     - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
 
 pages:
   stage: deploy
   script:
-  - apt update
-  - apt install --quiet --assume-yes bash curl
-  - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq-x86_64-linux.tar.gz'
-  - tar -xf 'htmlq-x86_64-linux.tar.gz'
-  - chmod +x htmlq
-  - export PATH="$PWD:$PATH"
-  - bash gdrive-img.bash
+  - *build-script
   artifacts:
     paths:
     - public
