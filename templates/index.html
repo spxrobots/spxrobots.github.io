@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+SPX Robotics
+{% endblock title %}
+
+{% block header %}
+{% include "nav.html" %}
+{% endblock header %}
+
+{% block main %}
+{{ section.content | safe }}
+{% endblock main %}
+

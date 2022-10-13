@@ -14,3 +14,10 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+nav = [
+  { name = "Main", href = "/" },
+  { name = "Soccer", href = "/soccer" },
+  { name = "FLL", href = "/fll" },
+  { name = "Pixy", href = "/pixy" },
+  { name = "Blog", href = "/blog" },
+]

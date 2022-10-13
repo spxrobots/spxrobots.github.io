@@ -1,0 +1,11 @@
+<nav>
+  <ol role="list">
+    {% for link in config.extra.nav %}
+      <li>
+        <a href="{{link.href}}">
+          {{link.name}}
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+</nav>
