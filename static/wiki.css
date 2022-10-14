@@ -1,4 +1,26 @@
 /* wiki.css */
 
-main {
+.wikiimg {
+    margin: 1rem;
+    max-width: 30%;
+    float: right;
+    clear: right;
+}
+
+.wikiimg.left {
+    float: left;
+    clear: left;
+}
+
+.wikiimg img {
+    width: 100%;
+    max-width: initial;
+}
+
+pre {
+    max-width: 100ch;
+}
+
+section {
+    max-width: 100ch;
 }
