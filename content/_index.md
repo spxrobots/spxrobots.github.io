@@ -41,7 +41,7 @@ title = "SPX Robotics"
 
 ---
 
-## Current Projects
+## 👷‍♂️ Current Projects
 
 * GitLab Project Code Repository - Pilot Programme
   * SSH key management
@@ -49,9 +49,9 @@ title = "SPX Robotics"
   * Project pages
   * Images Images Images
 * EV3 First Lego League - Superpowered Challenges
-* and more!
+* and more! (add your project here)
 
-## Available Projects
+## 📖 Available Projects
 
 * RoboCup Opens Reference Implementation
   * Driving Base
@@ -62,7 +62,7 @@ title = "SPX Robotics"
   * Underside battery mount (to ensure center of gravity below props)
   * Long landing legs (so battery isn't smashed)
 
-## Previous Work
+## 📦 Previous Work
 
 * EV3 Robotic Hand
 * Quadcopter
@@ -71,7 +71,7 @@ title = "SPX Robotics"
 * Snake Game
 * RoboCup Opens Competition Robots
 
-## Robots Storage
+## 🗃️ Robots Storage
 
 * A5 (Formerly LC2)
 * A6 (Formerly LC1)
