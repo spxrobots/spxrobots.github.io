@@ -44,6 +44,7 @@ nav li {
   border: 0.1rem solid #777;
   border-radius: 5rem;
   background-color: white;
+  white-space: nowrap;
 }
 
 nav li:hover {

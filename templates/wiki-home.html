@@ -1,0 +1,14 @@
+{% extends "section.html" %}
+
+{% block main %}
+
+{{ section.content | safe }}
+
+<h2>Pages</h2>
+<ul>
+  {% for page in section.pages | sort(attribute="title") %}
+    <li><a href="/wiki/{{ page.slug }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock main %}

@@ -1,0 +1,29 @@
+{% extends "page.html" %}
+
+{% block main %}
+
+{{ page.content | safe }}
+
+{% if page.extra.see_also and page.extra.see_also | length > 0 %}
+<section>
+  <h2>See Also</h2>
+  <ul>
+  {% for link in page.extra.see_also %}
+    <li><a href="{{ link.href }}">{{ link.name }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if page.backlinks | length > 0 %}
+<section>
+  <h2>What Links Here</h2>
+  <ul>
+  {% for page in page.backlinks %}
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% endblock main %}

@@ -10,5 +10,9 @@
 *.bmp
 *.ico
 *.svg
+*.ttf
+*.otf
+*.woff
+*.woff2
 img/
 public/

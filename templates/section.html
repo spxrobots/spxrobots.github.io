@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+SPX Robots {{ section.title }}
+{% endblock title %}
+
+{% block header %}
+<h1><img src="/img/robotics.png"/> SPX Robots {{ section.title }}</h1>
+{% include "nav.html" %}
+{% endblock header %}
+
+{% block main %}
+{{ section.content | safe }}
+{% endblock main %}

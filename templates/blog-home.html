@@ -1,0 +1,14 @@
+{% extends "section.html" %}
+
+{% block main %}
+
+{{ section.content | safe }}
+
+<h2>Pages</h2>
+<ul>
+  {% for page in section.pages %}
+    <li><a href="/blog/{{ page.slug }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock main %}

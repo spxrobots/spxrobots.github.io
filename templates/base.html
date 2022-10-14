@@ -8,6 +8,7 @@
   <link href="/main.css" rel="stylesheet"/>
   <link href="/font.css" rel="stylesheet"/>
   <link href="/nav.css" rel="stylesheet"/>
+  {% block head %} {% endblock head %}
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     {% block main %}{% endblock main %}
   </main>
   <footer>
-    {% block footer %}{% endblock footer %}
+    2022 - SPX Robotics Club - <a href="/sitemap.xml">Sitemap</a>
   </footer>
   <!-- Debugging -->
   {% if DEBUG %}

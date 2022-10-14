@@ -3,9 +3,27 @@
     {% for link in config.extra.nav %}
       <li>
         <a href="{{link.href}}">
-          {{link.name}}
+          {{ link.name }}
         </a>
       </li>
     {% endfor %}
+    {% if section.extra.nav %}
+    {% for link in section.extra.nav %}
+      <li>
+        <a href="{{link.href}}">
+          {{ link.name }}
+        </a>
+      </li>
+    {% endfor %}
+    {% endif %}
+    {% if page.extra.nav %}
+    {% for link in page.extra.nav %}
+      <li>
+        <a href="{{link.href}}">
+          {{ link.name }}
+        </a>
+      </li>
+    {% endfor %}
+    {% endif %}
   </ol>
 </nav>

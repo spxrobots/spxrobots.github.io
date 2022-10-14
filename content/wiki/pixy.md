@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>SPX Robotics - Pixy</title>
-  <link rel="stylesheet" href="/spx.css"/>
-</head>
-<body>
-<header>
-  <img alt="Crowned shield crest with cog-wheel, motto Fide et Labore." src="/img/robotics.png" width="200px"/>
-  <div><h1>Pixy Vision</h1></div>
-  <nav>
-    <ul>
-      <li><a href="/">Main</a></li>
-      <li><a href="/soccer.html">Soccer</a></li>
-      <li><a href="/fll/">FLL</a></li>
-      <li><a href="/pixy.html">Pixy</a></li>
-      <li><a href="/blog/">Blog</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <img src="/img/pixy.jpg" width="200"/>
-  <img src="/img/pixy-track.gif" width="200"/>
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29">PixyCam Setup for Arduino</a></li>
-  </ul>
-  <h2>Pixy Example Code</h2>
-<pre><code>#include &lt;SPI.h&gt;
-#include &lt;Pixy.h&gt;
++++
+title = "Pixy Cam"
+
+[extra]
+see_also = [
+  { name = "PixyCam Setup for Arduino", href = "https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29" }
+]
++++
+
+<img width="300" src="/img/pixy.jpg" style="float:right"/>
+
+The Pixy Cam (formerly known as CMUCam5) is a computer-vision enabled camera sensor for detecting and locating various coloured objects within its view.
+
+## Sample Code
+
+```c
+#include <SPI.h>
+#include <Pixy.h>
 
 #define BALL_SIGNATURE 1
 
@@ -63,7 +49,7 @@ bool findBall() {
   }
   // if we did find a ball
   // compute data so it is useful (ball struct)
-  if (block != NULL)
+  if (block != NULL) {
     ball.x = (int16_t)(block->x + block->width / 2) - 160;
     ball.y = (int16_t)(block->y + block->height / 2) - 100;
     ball.width = block->width;
@@ -90,8 +76,5 @@ void loop() {
       // ball in the middle
     }
   }
-}</code></pre>
-</main>
-<footer>2022 - SPX Robotics Club</footer>
-</body>
-</html>
+}
+```
