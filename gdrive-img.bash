@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 TARGET="public/img"
 
@@ -51,6 +51,7 @@ fetch_folder () {
       then
         fetch_folder "$target_dir/$name" "$id"
       else
+        echo "Downloading $name"
         curl -sSfL "https://drive.google.com/uc?id=$id" > "$target_dir/$name"
         if [ "$?" != 0 ]
         then
