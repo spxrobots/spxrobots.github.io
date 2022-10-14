@@ -42,6 +42,7 @@
 
 .toc ol {
     margin: 0;
+    padding-left: 1rem;
 }
 
 .toc > ol {

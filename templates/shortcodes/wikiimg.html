@@ -1,4 +1,4 @@
-<figure class="wikiimg">
-  <img src="{{ href }}" width="300" {% if align and align == "left" %} class="left" {% endif %} />
+<figure class="wikiimg {% if align and align == "left" %} left {% endif %}">
+  <img src="{{ href }}" width="300"/>
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
 </figure>

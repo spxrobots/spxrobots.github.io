@@ -10,7 +10,7 @@ see_also = [
 ]
 +++
 
-{{ wikiimg(href="/img/fast-game.gif", caption="2018 RoboCup Competition, our team is in purple.") }}
+{{ wikiimg(href="/img/fast-game.gif", caption="2018 RoboCup Competition, one of our teams is in purple.") }}
 
 The RoboCup Junior Soccer competition is a soccer robot competition, held annually at regional, state, national and international levels. Teams compete in of either the Standard, Lightweight, Open, Simple Simon or Simulation divisions.
 
