@@ -7,7 +7,12 @@
 <h2>Pages</h2>
 <ul>
   {% for page in section.pages | sort(attribute="title") %}
-    <li><a href="/wiki/{{ page.slug }}">{{ page.title }}</a></li>
+    <li {% if page.extra.stub %} title="This is an incomplete page, you can help by contributing writing and images." {% endif %}>
+      <a href="/wiki/{{ page.slug }}">
+        {{ page.title }}
+        {% if page.extra.stub %} [Stub] {% endif %}
+      </a>
+    </li>
   {% endfor %}
 </ul>
 

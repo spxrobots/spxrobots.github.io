@@ -9,13 +9,13 @@ see_also = [
 ]
 +++
 
-<img width="300" src="/img/fast-game.gif" style="float:right"/>
+{{ wikiimg(href="/img/fast-game.gif", caption="2018 RoboCup Competition, our team is in purple.") }}
 
 The RoboCup Junior Soccer competition is a soccer robot competition, held annually at regional, state, national and international levels. Teams compete in of either the Standard, Lightweight, Open, Simple Simon or Simulation divisions.
 
 ## Standard
 
-The Standard division is a Lego-only competition, and uses an infrared enabled soccer ball. Robots are a maximum of 1kg, and must fit within a 22cm cylinder. It is a perfect entry level introduction to the rules and logic of the game of robot soccer.
+The Standard division is a Lego-only competition, and uses an infrared enabled soccer ball. It has seen the use of the 1st gen RCX, 2nd gen NXT, [3rd gen EV3](@/wiki/ev3.md) and will see the introduction of Raspberry Pi with the next gen SpikePrime. Robots are a maximum of 1kg, and must fit within a 22cm cylinder. It is a perfect entry level introduction to the rules and logic of the game of robot soccer.
 
 ## Lightweight
 

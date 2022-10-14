@@ -1,6 +1,9 @@
 /* wiki.css */
 
 .wikiimg {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 0.5rem;
     margin: 1rem;
     max-width: 30%;
     float: right;
@@ -14,7 +17,14 @@
 
 .wikiimg img {
     width: 100%;
+    max-height: initial;
     max-width: initial;
+}
+
+.banner {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 0 1rem;
 }
 
 pre {

@@ -6,6 +6,13 @@
 
 {% block main %}
 
+{% if page.extra.stub %}
+<section class="banner">
+  <h2>💡 This Page is a Stub.</h2>
+  <p>Help improve this page by contributing facts, tips, experience, images and more.</p>
+</section>
+{% endif %}
+
 {{ page.content | safe }}
 
 {% if page.extra.see_also and page.extra.see_also | length > 0 %}
