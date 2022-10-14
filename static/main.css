@@ -2,6 +2,7 @@
 
 :root {
     box-sizing: border-box;
+    --colour-gold: #da0;
 }
 
 body {
@@ -24,7 +25,7 @@ p {
 
 footer {
     padding: 1rem;
-    background-color: #db1;
+    background-color: var(--colour-gold);
 }
 
 header {
