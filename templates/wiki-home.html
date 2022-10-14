@@ -7,10 +7,15 @@
 <h2>Pages</h2>
 <ul>
   {% for page in section.pages | sort(attribute="title") %}
-    <li {% if page.extra.stub %} title="This is an incomplete page, you can help by contributing writing and images." {% endif %}>
+    <li
+      {% if page.extra.stub %} title="This is an incomplete page, you can help by contributing writing and images." {% endif %}
+      {% if page.extra.gold %} title="This is a golden wiki page, it is a good example for how to write others." {% endif %}
+    >
       <a href="/wiki/{{ page.slug }}">
+        {% if page.extra.gold %} 🥇 {% endif %}
         {{ page.title }}
         {% if page.extra.stub %} [Stub] {% endif %}
+        {% if page.extra.gold %} [Gold] {% endif %}
       </a>
     </li>
   {% endfor %}

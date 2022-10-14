@@ -27,6 +27,29 @@
     padding: 0 1rem;
 }
 
+.toc {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    max-width: 60ch;
+    width: fit-content;
+    padding: 0.5rem 1rem
+}
+
+.toc summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toc ol {
+    margin: 0;
+}
+
+.toc > ol {
+    padding-left: 0;
+    list-style-position: inside;
+    margin-top: 0.5rem;
+}
+
 pre {
     max-width: 100ch;
 }
