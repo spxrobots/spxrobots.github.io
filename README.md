@@ -5,8 +5,8 @@
     * Website hosting
 * Google Drive
     * Image storage
-* DuckDNS.org
-    * DNS (A, TXT) for spxrobots.duckdns.org
+* Clouflare (currently with Oli - need to transfer)
+    * Domain for spxrobots.org
 
 # !!! IMPORTANT PRIVACY NOTICE !!!
 

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://spxrobots.duckdns.org"
+base_url = "https://spxrobots.org"
 
 title = "SPX Robots"
 
