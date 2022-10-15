@@ -26,6 +26,14 @@ Ensure you're current directory is the base of the repository before building or
 zola build
 ```
 
+## Patches
+
+* Make your changes in Git.
+* Squash (via rebase) into a single commit.
+* Run `git format-patch origin/main -o ~/Desktop`
+* Submit patch file to staff.
+* Patches will be anonymised to `Student <>`
+* Patches applied via `git am 0000-foo-bar.patch`
 
 ## Note on Images Etc.
 
