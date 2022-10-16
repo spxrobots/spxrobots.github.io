@@ -24,9 +24,15 @@ main::after {
 }
 
 .wikiimg img {
+    display: block;
     width: 100%;
+    margin: auto;
     max-height: initial;
-    max-width: initial;
+    max-width: 300px;
+}
+
+.wikiimg figcaption {
+    margin-top: 0.5rem;
 }
 
 .banner {
@@ -71,4 +77,19 @@ section {
     pre {
         clear: both;
     }
+}
+
+table {
+    border: 1px solid #aaa;
+}
+
+th {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 0.1rem 0.5rem;
+}
+
+td {
+    border: 1px solid #aaa;
+    padding: 0.1rem 0.5rem;
 }
