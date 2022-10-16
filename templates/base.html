@@ -21,7 +21,10 @@
     {% block main %}{% endblock main %}
   </main>
   <footer>
-    2022 - SPX Robotics Club - <a href="/sitemap.xml">Sitemap</a>
+    2022
+    - SPX Robotics Club
+    - <a href="/sitemap.xml">Sitemap</a>
+    - Build {{ now(utc=true) | date(format="%Y.%m.%d.%H%M", timezone="Australia/Sydney") }}
   </footer>
   <!-- Debugging -->
   {% if DEBUG %}
