@@ -11,6 +11,12 @@
     clear: right;
 }
 
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .wikiimg.left {
     float: left;
     clear: left;
@@ -59,4 +65,10 @@ pre {
 
 section {
     max-width: 100ch;
+}
+
+@media (max-width: 1100px) {
+    pre {
+        clear: both;
+    }
 }
