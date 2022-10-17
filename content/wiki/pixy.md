@@ -7,8 +7,14 @@ see_also = [
 ]
 +++
 
-{{ wikiimg(href="/img/pixy.jpg") }}
-{{ wikiimg(href="/img/pixy-track.gif") }}
+{{ wikiimg(
+  href="/img/pixy.jpg"
+  caption="The 1st Gen PixyCam"
+) }}
+{{ wikiimg(
+  href = "/img/pixy-track.gif"
+  caption = "A example of how capable the humble PixyCam is at tracking many objects all at once."
+) }}
 
 The Pixy Cam (formerly known as CMUCam5) is a computer-vision enabled camera sensor for detecting and locating various coloured objects within its view.
 
