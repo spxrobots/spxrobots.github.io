@@ -6,7 +6,7 @@
     padding: 0.5rem;
     margin: 1rem;
     margin-right: 0;
-    max-width: 40%;
+    max-width: min(40%, 300px);
     float: right;
     clear: right;
 }
@@ -27,8 +27,9 @@ main::after {
     display: block;
     width: 100%;
     margin: auto;
-    max-height: initial;
-    max-width: 300px;
+    max-height: 300px;
+    max-width: initial;
+    background-color: #ccc;
 }
 
 .wikiimg figcaption {
