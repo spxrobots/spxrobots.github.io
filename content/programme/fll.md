@@ -28,6 +28,11 @@ aliases = ["/fll"]
   </li>
 </ol>
 
+## 🤔 FAQ
+
+* Which start area can we put our robot?
+  * Your choice! You're allowed to start in either.
+
 ## 👋 Welcome
 
 1. Your team will work together to build and program an autonomous LEGO robot.
