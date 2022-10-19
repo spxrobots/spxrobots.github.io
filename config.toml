@@ -23,6 +23,5 @@ nav = [
   { name = "FLL", href = "/programme/fll" },
   { name = "HoF", href = "/hall-of-fame" },
   { name = "Wiki", href = "/wiki" },
-  { name = "Year 5", href = "/programme/y5" },
-  { name = "Senior", href = "/programme/senior" },
+  { name = "Year 5", href = "/programme/y5" }
 ]

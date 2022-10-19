@@ -7,10 +7,6 @@ aliases = ["/fll"]
 
 <ol role="list" class="calendar">
   <li>
-    <p class="time">Week 2</p>
-    <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
-  </li>
-  <li>
     <p class="time">Week 3</p>
     <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
   </li>
@@ -25,6 +21,10 @@ aliases = ["/fll"]
   <li class="done">
     <p class="time">Week 1</p>
     <p>Finish Table</p>
+  </li>
+  <li>
+    <p class="time">Week 2</p>
+    <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
   </li>
 </ol>
 
