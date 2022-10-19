@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+<pre><code>{{ __tera_context }}</code></pre>
+
+{% block title %}404 Page Not Found | {{ config.title }}{% endblock title %}
+{% block header %}
+<h1><img src="/img/robotics.png"/> 404 Page Not Found | SPX Robots </h1>
+{% include "nav.html" %}
+{% endblock header %}
+
+{% block main %}
+<p>
+  The page you were looking for does not exist.
+  Navigate back to the main page, or use the navigation bar to try getting to it from there.
+</p>
+{% endblock main %}
