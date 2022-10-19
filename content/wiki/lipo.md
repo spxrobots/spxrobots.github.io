@@ -16,8 +16,8 @@ Lithium Polymer (better known as LiPo) batteries are a high density energy stora
 
 * ***LOOK*** for damage and battery specifications.
 * ***INPUT*** the correct charging parameters.
-* ***PROTECT*** battery in a fireproof bag.
-* ***OBSERVE*** always, when charging.
+* ***PROTECT*** the battery in a fireproof bag.
+* ***OBSERVE*** always, when charging and in use.
 
 ## Usage
 
