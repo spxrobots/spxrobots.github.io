@@ -14,15 +14,23 @@ aliases = ["/fll"]
     <p class="time">Week 4</p>
     <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
   </li>
-  <!-- <li>
+  <li>
     <p class="time">Week 5</p>
     <p>Competition<br/>with Prizes</p>
-  </li> -->
+  </li>
+  <li>
+    <p class="time">Week 6</p>
+    <p>Sumo Construction</p>
+  </li>
+  <li>
+    <p class="time">Week 7</p>
+    <p>RoboSumo Competition</p>
+  </li>
   <li class="done">
     <p class="time">Week 1</p>
     <p>Finish Table</p>
   </li>
-  <li>
+  <li class="done">
     <p class="time">Week 2</p>
     <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
   </li>
