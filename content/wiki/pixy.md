@@ -2,6 +2,7 @@
 title = "Pixy Cam"
 
 [extra]
+stub = true
 see_also = [
   { name = "PixyCam Setup for Arduino", href = "https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29" }
 ]

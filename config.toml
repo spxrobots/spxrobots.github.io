@@ -20,10 +20,9 @@ highlight_theme = "gruvbox-light"
 # Put all your custom variables here
 nav = [
   { name = "Main", href = "/" },
-  # { name = "EV3", href = "/ev3" },
   { name = "FLL", href = "/programme/fll" },
   { name = "HoF", href = "/hall-of-fame" },
-  # { name = "Pixy", href = "/pixy" },
   { name = "Wiki", href = "/wiki" },
-  { name = "Blog", href = "/blog" },
+  { name = "Year 5", href = "/programme/y5" },
+  { name = "Senior", href = "/programme/senior" },
 ]

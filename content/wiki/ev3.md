@@ -2,6 +2,7 @@
 title = "EV3"
 
 [extra]
+stub = true
 see_also = [
   { name = "Lego Mindstorms: A History of Educational Robots", href = "http://hackeducation.com/2015/04/10/mindstorms" }
 ]

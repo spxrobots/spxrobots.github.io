@@ -14,8 +14,8 @@ Lithium Polymer (better known as LiPo) batteries are a high density energy stora
 
 ## The LIPO Acronym
 
-* ***LOOK*** for damage and battery specifications.
-* ***INPUT*** the correct charging parameters.
+* ***LOOK*** for damage.
+* ***IDENTIFY*** the battery specifications, such as charging parameters and maximum current draw.
 * ***PROTECT*** the battery in a fireproof bag.
 * ***OBSERVE*** always, when charging and in use.
 

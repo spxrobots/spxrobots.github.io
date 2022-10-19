@@ -1,6 +1,5 @@
 +++
 title = "RoboCup Junior Soccer"
-
 [extra]
 gold = true
 see_also = [
