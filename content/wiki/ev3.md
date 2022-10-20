@@ -17,7 +17,7 @@ The Lego Mindstorms EV3 platform is the third generation of Lego robotics, follo
 ### Input and Output
 
 Ports 1-4 are used for sensor input.
-Ports A-D are used for motor output.
+Ports A-D are used for motor output. Default motor ports are B (left) and C (right).
 
 ## Components
 
