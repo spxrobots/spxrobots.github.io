@@ -5,36 +5,14 @@ aliases = ["/fll"]
 
 ## 📅 Calendar
 
-<ol role="list" class="calendar">
-  <li>
-    <p class="time">Week 3</p>
-    <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
-  </li>
-  <li>
-    <p class="time">Week 4</p>
-    <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
-  </li>
-  <li>
-    <p class="time">Week 5</p>
-    <p>Competition<br/>with Prizes</p>
-  </li>
-  <li>
-    <p class="time">Week 6</p>
-    <p>Sumo Construction</p>
-  </li>
-  <li>
-    <p class="time">Week 7</p>
-    <p>RoboSumo Competition</p>
-  </li>
-  <li class="done">
-    <p class="time">Week 1</p>
-    <p>Finish Table</p>
-  </li>
-  <li class="done">
-    <p class="time">Week 2</p>
-    <p>Solving Challenges<br/>+ Coding<br/>+ Building</p>
-  </li>
-</ol>
+{{ cal(items=[
+  ["Week 2", "2022-10-11", "Finish Table"],
+  ["Week 3", "2022-10-18", "Solving Challenges + Coding + Building"],
+  ["Week 4", "2022-10-25", "Solving Challenges + Coding + Building"],
+  ["Week 5", "2022-11-01", "Competition with Prizes"],
+  ["Week 6", "2022-11-08", "Sumo Construction"],
+  ["Week 7", "2022-11-15", "RoboSumo Competition"],
+]) }}
 
 ## 🤔 FAQ
 
