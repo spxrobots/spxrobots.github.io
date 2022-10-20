@@ -12,6 +12,13 @@ see_also = [
 
 The Lego Mindstorms EV3 platform is the third generation of Lego robotics, following on from RCX and NXT. Suitable for Standard and Lightweight [Soccer Robots](@/wiki/soccer.md). Also sees use in the [First Lego League Challenge](@/wiki/fll.md).
 
+## The Brick
+
+### Input and Output
+
+Ports 1-4 are used for sensor input.
+Ports A-D are used for motor output.
+
 ## Components
 
 ### Sensors
