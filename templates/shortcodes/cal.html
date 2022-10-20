@@ -1,0 +1,25 @@
+{% set now_timestamp = now() | date(format="%s") | int %}
+{% set cal_future = [] %}
+{% set cal_past = [] %}
+{% for item in items %}
+  {% set item_timestamp = item.1 | date(format="%s") | int %}
+  {% if now_timestamp < item_timestamp %}
+    {% set_global cal_future = cal_future | concat(with=[item]) %}
+  {% else %}
+    {% set_global cal_past = cal_past | concat(with=[item]) %}
+  {% endif %}
+{% endfor %}
+<ol class="calendar" role="list">
+{% for item in cal_future %}
+  <li>
+    <p class="time">{{ item.0 }}</p>
+    <p>{{ item.2 }}</p>
+  </li>
+{% endfor %}
+{% for item in cal_past %}
+  <li class="done">
+    <p class="time">{{ item.0 }}</p>
+    <p>{{ item.2 }}</p>
+  </li>
+{% endfor %}
+</ol>
