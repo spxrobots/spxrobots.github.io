@@ -60,6 +60,20 @@ header h1 {
     color: white;
     white-space: nowrap;
     overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white #123;
+}
+
+header h1::-webkit-scrollbar {
+    background-color: #123;
+    height: 0.5rem;
+}
+
+header h1::-webkit-scrollbar-thumb {
+    background-color: white;
+    width: 50%;
+    border-radius: 5rem;
+    border: 0.15rem solid #123;
 }
 
 header h1::before {

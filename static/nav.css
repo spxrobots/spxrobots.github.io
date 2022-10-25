@@ -38,6 +38,20 @@ nav ol {
   margin: 0;
   gap: 0.5rem;
   overflow-x: scroll;
+  scrollbar-color: white var(--colour-gold);
+  scrollbar-width: thin;
+}
+
+nav ol::-webkit-scrollbar {
+  background-color: var(--colour-gold);
+  height: 0.5rem;
+}
+
+nav ol::-webkit-scrollbar-thumb {
+  background-color: white;
+  width: 50%;
+  border-radius: 5rem;
+  border: 0.15rem solid var(--colour-gold);
 }
 
 nav li {
