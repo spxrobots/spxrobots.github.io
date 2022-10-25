@@ -14,6 +14,11 @@ aliases = ["/fll"]
   ["Week 7", "2022-11-15", "RoboSumo Competition"],
 ]) }}
 
+## Links
+
+* [EV3 Wiki Page](@/wiki/ev3.md)
+* [Coding Wiki Page](@/wiki/code.md)
+
 ## 🤔 FAQ
 
 * Which start area can we put our robot?
