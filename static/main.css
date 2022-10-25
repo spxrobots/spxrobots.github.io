@@ -162,3 +162,30 @@ main iframe {
     color: white;
     font-weight: bold;
 }
+
+.biglink {
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    background-color: #ddd;
+    overflow: hidden;
+    align-items: center;
+    padding-right: 0.8rem;
+    color: #06c;
+    text-decoration: none;
+    margin: 0.2rem;
+    border-bottom: 0.2rem solid #ddd;
+}
+
+.biglink > span {
+    vertical-align: middle;
+    /* background-color: #06c; */
+    padding: 0.2rem 0.1rem 0.1rem 0.5rem;
+    margin-right: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.biglink:hover {
+    background-color: #bbb;
+    border-color: #06c;
+}

@@ -14,10 +14,12 @@ aliases = ["/fll"]
   ["Week 7", "2022-11-15", "RoboSumo Competition"],
 ]) }}
 
-## Links
+## 🔗 Links
 
-* [EV3 Wiki Page](@/wiki/ev3.md)
-* [Coding Wiki Page](@/wiki/code.md)
+* {{ biglink(emoji="📔", name="FLL Rulebook", href="https://firstinspiresst01.blob.core.windows.net/first-energize/fll-challenge/fll-challenge-superpowered-robot-game-rulebook.pdf") }}
+* {{ biglink(emoji="📝", name="Self-Serve Scoresheet", href="/wiki/ev3") }}
+<!-- * {{ biglink(emoji="📖", name="EV3 Wiki Page", href="/wiki/ev3") }}
+* {{ biglink(emoji="📖", name="Coding Wiki Page", href="/wiki/code") }} -->
 
 ## 🤔 FAQ
 
