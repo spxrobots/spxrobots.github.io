@@ -2,7 +2,7 @@
 {% set cal_future = [] %}
 {% set cal_past = [] %}
 {% for item in items %}
-  {% set item_timestamp = item.1 | date(format="%s") | int %}
+  {% set item_timestamp = item.1 | date(format="%s") | int + 64800 %}
   {% if now_timestamp < item_timestamp %}
     {% set_global cal_future = cal_future | concat(with=[item]) %}
   {% else %}

@@ -6,10 +6,6 @@ title = "SPX Robotics"
 
 <ol role="list" aria-label="Robotics Calendar" class="calendar">
 <li>
-  <p class="time">Week 2</p>
-  <p>Projects, Website Content</p>
-</li>
-<li>
   <p class="time">Week 3</p>
   <p>Year 5 Introduction & Install EV3</p>
 </li>
@@ -36,6 +32,10 @@ title = "SPX Robotics"
 <li class="done">
   <p class="time">Week 1</p>
   <p>Projects</p>
+</li>
+<li class="done">
+  <p class="time">Week 2</p>
+  <p>Projects, Website Content</p>
 </li>
 </ol>
 
