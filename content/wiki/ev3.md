@@ -37,3 +37,8 @@ Ports A-D are used for motor output. Default motor ports are B (left) and C (rig
 
 ### Robot Movement
 
+#### Turn On-The-Spot 90 Degrees
+
+```
+[ move (right: 100) for (1) rotations at (50%) speed ]
+```
