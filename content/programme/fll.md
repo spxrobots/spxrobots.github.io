@@ -16,8 +16,8 @@ aliases = ["/fll"]
 
 ## 🔗 Links
 
-* {{ biglink(emoji="📔", name="FLL Rulebook", href="https://firstinspiresst01.blob.core.windows.net/first-energize/fll-challenge/fll-challenge-superpowered-robot-game-rulebook.pdf") }}
-* {{ biglink(emoji="📝", name="Self-Serve Scoresheet", href="/wiki/ev3") }}
+* {{ biglink(emoji="📔", name="FLL Rules and Missions [PDF]", href="https://firstinspiresst01.blob.core.windows.net/first-energize/fll-challenge/fll-challenge-superpowered-robot-game-rulebook.pdf") }}
+* {{ biglink(emoji="📝", name="Self-Serve Scoresheet [Web]", href="/wiki/ev3") }}
 <!-- * {{ biglink(emoji="📖", name="EV3 Wiki Page", href="/wiki/ev3") }}
 * {{ biglink(emoji="📖", name="Coding Wiki Page", href="/wiki/code") }} -->
 
