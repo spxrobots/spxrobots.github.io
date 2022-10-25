@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGET="public/img"
+TARGET="static/img"
 
 is_folder () {
   local data rest
@@ -51,12 +51,17 @@ fetch_folder () {
       then
         fetch_folder "$target_dir/$name" "$id"
       else
-        echo "Downloading $name"
-        curl -sSfL "https://drive.google.com/uc?id=$id" > "$target_dir/$name"
-        if [ "$?" != 0 ]
+        if [ -f "$target_dir/$name" ]
         then
-          echo "Error downloading $name"
-          exit 1
+          echo "Already have $name"
+        else
+          echo "Downloading $name"
+          curl -sSfL "https://drive.google.com/uc?id=$id" > "$target_dir/$name"
+          if [ "$?" != 0 ]
+          then
+            echo "Error downloading $name"
+            exit 1
+          fi
         fi
       fi
     done

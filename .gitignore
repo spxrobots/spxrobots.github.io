@@ -16,3 +16,5 @@
 *.woff2
 img/
 public/
+static/img/
+public/img/
