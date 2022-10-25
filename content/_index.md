@@ -4,40 +4,16 @@ title = "SPX Robotics"
 
 ## Welcome to the SPX Robotics Club Homepage!
 
-<ol role="list" aria-label="Robotics Calendar" class="calendar">
-<li>
-  <p class="time">Week 3</p>
-  <p>Year 5 Introduction & Install EV3</p>
-</li>
-<li>
-  <p class="time">Week 4</p>
-  <p>Year 5 Build Robots</p>
-</li>
-<li>
-  <p class="time">Week 5</p>
-  <p>Year 5 Programming</p>
-</li>
-<li>
-  <p class="time">Week 6</p>
-  <p>Year 5 Challenges</p>
-</li>
-<li>
-  <p class="time">Week 7</p>
-  <p>Year 5 Challenges</p>
-</li>
-<li>
-  <p class="time">Week 8</p>
-  <p>Year 5 Challenges</p>
-</li>
-<li class="done">
-  <p class="time">Week 1</p>
-  <p>Projects</p>
-</li>
-<li class="done">
-  <p class="time">Week 2</p>
-  <p>Projects, Website Content</p>
-</li>
-</ol>
+{{ cal(items=[
+  ["Week 1", "2022-10-13", "Projects"],
+  ["Week 2", "2022-11-20", "Projects"],
+  ["Week 3", "2022-10-25", "Year 5 Introduction & Install EV3"],
+  ["Week 4", "2022-11-03", "Year 5 Programming Bricks"],
+  ["Week 5", "2022-11-10", "Year 5 Programme"],
+  ["Week 6", "2022-11-17", "Year 5 Programme"],
+  ["Week 7", "2022-11-24", "Year 5 Programme"],
+  ["Week 8", "2022-11-01", "Year 5 Programme"],
+]) }}
 
 ---
 
