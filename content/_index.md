@@ -5,7 +5,7 @@
 
 {{ cal(items=[
   ["Week 1", "2022-10-13", "Projects"],
-  ["Week 2", "2022-11-20", "Projects"],
+  ["Week 2", "2022-10-20", "Projects"],
   ["Week 3", "2022-10-25", "Year 5 Introduction & Install EV3"],
   ["Week 4", "2022-11-03", "Year 5 Programming Bricks"],
   ["Week 5", "2022-11-10", "Year 5 Programme"],
