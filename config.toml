@@ -21,7 +21,8 @@ highlight_theme = "gruvbox-light"
 nav = [
   { name = "Main", href = "/" },
   { name = "FLL", href = "/programme/fll" },
-  { name = "HoF", href = "/hall-of-fame" },
+  { name = "Year 5", href = "/programme/y5" },
   { name = "Wiki", href = "/wiki" },
-  { name = "Year 5", href = "/programme/y5" }
+  { name = "HoF", href = "/hall-of-fame" },
+  # { name = "Leaderboard", href = "/leaderboard" },
 ]

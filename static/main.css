@@ -189,3 +189,13 @@ main iframe {
     background-color: #bbb;
     border-color: #06c;
 }
+
+blockquote {
+    margin-left: 1.3rem;
+    padding: 0.5rem 0 0.5rem 0.8rem;
+    border-left: 0.3rem solid #bbb;
+}
+
+blockquote > p {
+    margin: 0;
+}
