@@ -1,5 +1,4 @@
 +++
-title = "SPX Robotics"
 +++
 
 ## Welcome to the SPX Robotics Club Homepage!
