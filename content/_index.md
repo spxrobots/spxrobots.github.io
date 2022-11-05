@@ -11,7 +11,7 @@
   ["Week 5", "2022-11-10", "Year 5 Programme"],
   ["Week 6", "2022-11-17", "Year 5 Programme"],
   ["Week 7", "2022-11-24", "Year 5 Programme"],
-  ["Week 8", "2022-11-01", "Year 5 Programme"],
+  ["Week 8", "2022-12-01", "Year 5 Programme"],
 ]) }}
 
 ---
