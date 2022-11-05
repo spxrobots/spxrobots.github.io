@@ -6,12 +6,12 @@ aliases = ["/fll"]
 ## 📅 Calendar
 
 {{ cal(items=[
-  ["Week 2", "2022-10-11", "Finish Table"],
-  ["Week 3", "2022-10-18", "Solving Challenges + Coding + Building"],
-  ["Week 4", "2022-10-25", "Solving Challenges + Coding + Building"],
-  ["Week 5", "2022-11-01", "Competition with Prizes"],
-  ["Week 6", "2022-11-08", "RoboSumo Introduction, Building and Programming"],
-  ["Week 7", "2022-11-15", "RoboSumo Competition"],
+  ["Week 2", "2022-10-18", "Finish Table"],
+  ["Week 3", "2022-10-25", "Solving Challenges + Coding + Building"],
+  ["Week 4", "2022-11-01", "Solving Challenges + Coding + Building"],
+  ["Week 5", "2022-11-08", "Competition with Prizes"],
+  ["Week 6", "2022-11-15", "RoboSumo Introduction, Building and Programming"],
+  ["Week 7", "2022-11-22", "RoboSumo Competition"],
 ]) }}
 
 ## 🔗 Links
