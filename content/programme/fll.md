@@ -25,6 +25,10 @@ aliases = ["/fll"]
 
 * Which start area can we put our robot?
   * Your choice! You're allowed to start in either.
+* Should we have our robot do one mission then return for the next,
+  or complete as many as possible in a single run?
+  * If you're starting out, one at a time.
+  * Once you've got lots of missions, then try combining them into a single program.
 
 ## 👋 Welcome
 
