@@ -9,6 +9,8 @@ Code is represented in a variety of different Programming Languages such as [C](
 
 ### Git
 
+> [See the main Git page here.](@/wiki/git.md)
+
 ### Folder Structure
 
 ### Comments
