@@ -15,6 +15,6 @@
 *.woff
 *.woff2
 img/
+font/
 public/
-static/img/
-public/img/
+static/

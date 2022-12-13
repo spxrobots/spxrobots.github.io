@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TARGET="static/img"
+TARGET="./static"
 
 is_folder () {
-  local data rest
-  while read data rest
+  local data
+  while read data
   do
     if echo "$data" | grep -qi 'folder'
     then
