@@ -4,7 +4,7 @@ image: debian
   - export PATH="$PWD:$PATH"
   - apt update
   # Install build dependencies
-  - apt install --quiet --assume-yes bash curl git
+  - apt install --quiet --assume-yes bash curl
   - curl -L 'https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz' > 'htmlq.tar.gz'
   - tar -xf 'htmlq.tar.gz'
   - chmod +x htmlq
@@ -15,7 +15,7 @@ image: debian
   - bash fetch-assets.bash
   # Echo out Git Version (for build-id)
   - echo -n " (" > templates/gitrev.html
-  - git rev-parse --short head | head -c7 >> templates/gitrev.html
+  - echo "CI_COMMIT_SHA" | head -c7 >> templates/gitrev.html
   - echo -n ")" >> templates/gitrev.html
   # Build Zola markup
   - zola build
