@@ -18,3 +18,4 @@ img/
 font/
 public/
 static/
+templates/gitrev.html
