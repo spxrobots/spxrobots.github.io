@@ -1,12 +1,13 @@
 # SPX Robotics GitLab
 
 * GitLab
-    * Code storage
-    * Website hosting
+  * Code storage
+  * Website hosting
 * Google Drive
-    * Image storage
+  * Image storage
 * Clouflare (currently with Oli - need to transfer)
     * Domain for spxrobots.org
+  * `staff/git` email groups
 
 # !!! IMPORTANT PRIVACY NOTICE !!!
 
