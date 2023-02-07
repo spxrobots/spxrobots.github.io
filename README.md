@@ -14,16 +14,18 @@ Use `exiftool -all= image.jpg` or similar to remove identifying EXIF data (such 
 
 ## Developing Locally
 
-Make sure you have `bash` installed (to automatically fetch images from gdrive), and `zola` (https://github.com/getzola/zola/releases).
+### Dependencies
 
-Ensure you're current directory is the base of the repository before building or fetching images.
+* `bash` : <https://git-scm.com/downloads>
+* `zola` : <https://github.com/getzola/zola/releases>
+* `htmlq` : <https://github.com/mgdm/htmlq/releases>
+
+### Testing
+
+Ensure you're current directory is the base of the repository before building or fetching images (`ls` command should show `README.md`).
 
 ```sh
-./gdrive-img.bash
-```
-
-```sh
-zola build
+./serve.bash
 ```
 
 ## Patches
