@@ -23,7 +23,9 @@ body {
 }
 
 main {
-    margin: 1rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 54rem;
     min-height: calc(100vh - 13.9rem);
 }
 
@@ -36,8 +38,13 @@ p {
 }
 
 footer {
-    padding: 1rem;
     background-color: var(--colour-gold);
+}
+
+footer p {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 54rem;
 }
 
 header {
@@ -62,6 +69,10 @@ header h1 {
     overflow-x: scroll;
     scrollbar-width: thin;
     scrollbar-color: white #123;
+
+    width: 100%;
+    max-width: 54rem;
+    align-self: center;
 }
 
 header h1::-webkit-scrollbar {

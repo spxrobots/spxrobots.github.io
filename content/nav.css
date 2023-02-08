@@ -40,6 +40,9 @@ nav ol {
   overflow-x: scroll;
   scrollbar-color: white var(--colour-gold);
   scrollbar-width: thin;
+
+  max-width: 54rem;
+  margin: 0 auto;
 }
 
 nav ol::-webkit-scrollbar {
