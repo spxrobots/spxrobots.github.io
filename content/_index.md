@@ -11,7 +11,7 @@ images = [
 
 ## Welcome to the SPX Robotics Club Homepage!
 
-{{ cal(items=[
+<!-- {{ cal(items=[
   ["Week 1", "2022-10-13", "Projects"],
   ["Week 2", "2022-10-20", "Projects"],
   ["Week 3", "2022-10-27", "Year 5 Introduction & Install EV3"],
@@ -20,7 +20,7 @@ images = [
   ["Week 6", "2022-11-17", "Year 5 Programme"],
   ["Week 7", "2022-11-24", "Year 5 Programme"],
   ["Week 8", "2022-12-01", "Pack Up"],
-]) }}
+]) }} -->
 
 ---
 
