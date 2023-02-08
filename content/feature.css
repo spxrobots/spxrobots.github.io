@@ -63,3 +63,14 @@
 .gallery figcaption {
   margin: 0.5rem;
 }
+.gallery .gif {
+  position: relative;
+}
+.gallery .gif::before {
+  pointer-events: none;
+  content: "▶️";
+  position: absolute;
+  font-size: 3rem;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+}
