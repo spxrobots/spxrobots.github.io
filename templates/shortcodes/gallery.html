@@ -1,0 +1,14 @@
+{% if page is defined %}{% set extra = page.extra %}{% endif %}
+{% if section is defined %}{% set extra = section.extra %}{% endif %}
+{% set gallery = extra.gallery[name] %}
+<ul class="gallery" role="list">
+{% for image in gallery.images %}
+  {% set thumb = resize_image(path=image.url, width=200, height=200, op="fit", format="jpg", quality=30) %}
+  <li>
+    <figure>
+      <a href="{{ image.url }}"><img src="{{ thumb.url }}"/></a>
+      {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+    </figure>
+  </li>
+{% endfor %}
+</ul>

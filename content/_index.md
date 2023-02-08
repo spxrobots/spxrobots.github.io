@@ -1,4 +1,12 @@
 +++
+
+[extra.gallery.index]
+images = [
+  { url = "/img/ply-robo-field.jpeg" },
+  { url = "/img/fast-game.gif" },
+  { url = "/img/peppa-pig.jpeg" },
+  { url = "/img/cb-2018-standby.jpeg" },
+]
 +++
 
 ## Welcome to the SPX Robotics Club Homepage!
@@ -56,7 +64,6 @@
 
 ---
 
-[![](/img/ply-robo-field.jpeg)](/img/ply-robo-field.jpeg)
-[![](/img/fast-game.gif)](/img/fast-game.gif)
-[![](/img/peppa-pig.jpeg)](/img/peppa-pig.jpeg)
-[![](/img/cb-2018-standby.jpeg)](/img/cb-2018-standby.jpeg)
+## Gallery
+
+{{ gallery(name="index") }}

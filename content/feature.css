@@ -1,0 +1,65 @@
+.thumb {
+  display: inline-block;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+  margin: auto;
+  min-width: 100px;
+  width: fit-content;
+}
+
+.thumb img {
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+}
+
+.thumb figcaption {
+  margin-top: 0.5rem;
+}
+
+.floatright {
+  float: right;
+  clear: right;
+}
+
+.floatleft {
+  float: left;
+  clear: left;
+}
+
+
+
+.gallery {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+}
+.gallery li {
+  display: block;
+}
+.gallery figure {
+  margin: 0;
+  width: 12rem;
+}
+.gallery a {
+  display: block;
+  padding: 0.5rem;
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid #aaa;
+  background-color: #eee;
+}
+.gallery img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #aaa;
+  background-color: #ccc;
+}
+.gallery figcaption {
+  margin: 0.5rem;
+}

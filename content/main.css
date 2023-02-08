@@ -113,11 +113,11 @@ pre > code {
     overflow-x: scroll;
 }
 
-main img {
+/* main img {
     max-width: 50%;
     max-height: 25rem;
     object-fit: contain;
-}
+} */
 
 main iframe {
     max-width: 100%;
