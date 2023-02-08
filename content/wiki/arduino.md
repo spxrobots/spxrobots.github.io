@@ -1,7 +1,8 @@
 +++
 title = "Arduino"
+
 [extra]
 stub = true
 +++
 
-{{ wikiimg(href="/img/arduinoled.jpg", caption="Arduino Uno Sparkfun board, with LEDs connected.") }}
+{{ thumb(src="/img/arduinoled.jpg", cap="Arduino Uno Sparkfun board, with LEDs connected.") }}

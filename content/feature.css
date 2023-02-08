@@ -3,9 +3,9 @@
   background-color: #eee;
   border: 1px solid #aaa;
   padding: 0.5rem;
-  margin: auto;
-  min-width: 100px;
-  width: fit-content;
+  margin: 0.5rem;
+  min-width: 16rem;
+  width: min-content;
 }
 
 .thumb img {
@@ -36,6 +36,7 @@
   display: flex;
   padding: 0;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .gallery li {
   display: block;

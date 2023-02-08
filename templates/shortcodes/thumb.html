@@ -1,8 +1,7 @@
 {% if width is undefined %}{% set width=250 %}{% endif %}
 {% if height is undefined %}{% set height=300 %}{% endif %}
 {% set image = resize_image(path=src, width=width, height=height, op="fit") %}
-<figure class='thumb {{ class | default(value="") }}'>
+<figure class='thumb {% if align and align == "left" %}floatleft{% else %}floatright{% endif %}'>
   <a href="{{ src }}" target="_blank"><img src="{{ image.url }}"/></a>
   {% if cap %}<figcaption>{{ cap | safe }}</figcaption>{% endif %}
 </figure>
-{{ page | json_encode | safe }}

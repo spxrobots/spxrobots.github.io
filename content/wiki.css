@@ -1,39 +1,9 @@
 /* wiki.css */
 
-.wikiimg {
-    background-color: #eee;
-    border: 1px solid #aaa;
-    padding: 0.5rem;
-    margin: 1rem;
-    margin-right: 0;
-    max-width: min(40%, 300px);
-    float: right;
-    clear: right;
-}
-
 main::after {
     content: "";
     display: block;
     clear: both;
-}
-
-.wikiimg.left {
-    float: left;
-    clear: left;
-    margin-left: 0;
-}
-
-.wikiimg img {
-    display: block;
-    width: 100%;
-    margin: auto;
-    max-height: 300px;
-    max-width: initial;
-    background-color: #ccc;
-}
-
-.wikiimg figcaption {
-    margin-top: 0.5rem;
 }
 
 .banner {

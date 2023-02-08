@@ -8,7 +8,7 @@ see_also = [
 ]
 +++
 
-{{ wikiimg(href="/img/ply-robo-top.jpeg", caption="Charged LiPo Battery attached to a Soccer Robot.") }}
+{{ thumb(src="/img/ply-robo-top.jpeg", cap="Charged LiPo Battery attached to a Soccer Robot.") }}
 
 Lithium Polymer (better known as LiPo) batteries are a high density energy storage component. Made up of individual cells, the voltages of each are summed in series for the total output voltage of the battery.
 

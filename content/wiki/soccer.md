@@ -9,7 +9,7 @@ see_also = [
 ]
 +++
 
-{{ wikiimg(href="/img/fast-game.gif", caption="2018 RoboCup Competition, one of our teams is in purple.") }}
+{{ thumb(src="/img/fast-game.gif", cap="2018 RoboCup Competition, one of our teams is in purple.") }}
 
 The RoboCup Junior Soccer competition is a soccer robot competition, held annually at regional, state, national and international levels. Teams compete in of either the Standard, Lightweight, Open, Simple Simon or Simulation divisions.
 
@@ -27,6 +27,6 @@ The Lightweight division uses an infrared ball also, but allows for greater flex
 
 ### Open
 
-{{ wikiimg(href="/img/peppa-pig.jpeg", caption="2019 Soccer Robots from team 'Peppa Pig'") }}
+{{ thumb(src="/img/peppa-pig.jpeg", cap="2019 Soccer Robots from team 'Peppa Pig'") }}
 
 The Open division is the most advanced competition. A passive orange ball is used, so robots much use cameras and computer vision to track it. Robots can be made with anything, but typically use electronics such as [LiPo batteries](@/wiki/lipo.md) and the Arduino Mega board. Advanced materials such as 3D-printed plastics, laser cut wood or carbon-fibre are often applied. Omniwheels are also a popular movement option, allowing free motion in any direction. Robots are a maximum of 2.5kg and must fit within a 22cm cylinder.
