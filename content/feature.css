@@ -45,6 +45,7 @@
   width: 12rem;
 }
 .gallery a {
+  position: relative;
   display: block;
   padding: 0.5rem;
   width: 12rem;
@@ -63,10 +64,7 @@
 .gallery figcaption {
   margin: 0.5rem;
 }
-.gallery .gif {
-  position: relative;
-}
-.gallery .gif::before {
+.gallery .gif a::before {
   pointer-events: none;
   content: "▶️";
   position: absolute;
