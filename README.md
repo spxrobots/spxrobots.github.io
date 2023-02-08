@@ -4,7 +4,7 @@
   * Code storage
   * Website hosting
 * Google Drive
-  * Image storage
+  * Image storage (max 50 entries per folder layer)
 * Clouflare (currently with Oli - need to transfer)
     * Domain for spxrobots.org
   * `staff/git` email groups
