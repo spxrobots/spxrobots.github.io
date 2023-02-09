@@ -1,11 +1,17 @@
 +++
 title = "LiPo Batteries"
-[extra]
-see_also = [
-  { name = "Why is there so much fear surrounding LiPo batteries?", href = "https://electronics.stackexchange.com/questions/230155/why-is-there-so-much-fear-surrounding-lipo-batteries" },
-  { name = "Overcharged LiPo Spontaneous Combustion", href = "https://www.youtube.com/watch?v=EseOhC8n7ro" },
-  { name = "Roger's Guide to LiPo Batteries", href = "https://www.rogershobbycenter.com/lipoguide/" }
-]
+
+[[extra.see_also]]
+name = "Why is there so much fear surrounding LiPo batteries?"
+href = "https://electronics.stackexchange.com/questions/230155/why-is-there-so-much-fear-surrounding-lipo-batteries"
+
+[[extra.see_also]]
+name = "Overcharged LiPo Spontaneous Combustion"
+href = "https://www.youtube.com/watch?v=EseOhC8n7ro"
+
+[[extra.see_also]]
+name = "Roger's Guide to LiPo Batteries"
+href = "https://www.rogershobbycenter.com/lipoguide/"
 +++
 
 {{ thumb(src="/img/ply-robo-top.jpeg", cap="Charged LiPo Battery attached to a Soccer Robot.") }}
