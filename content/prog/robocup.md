@@ -14,11 +14,13 @@ images = [
 
 ## 📅 Calendar
 
-1. 20th February 2023, 7:30pm<br/>Spike Prime Challenge Information Session (via Zoom)
-2. 1st April 2023, 1:00pm to 4:30pm<br/>Term 1 Workshop
-3. (TBA)<br/>Term 2 Workshop
-4. Friday 9th June, 9:00pm<br/>Registrations Close
-5. 28th-29th August 2023<br/>NSW State Competition
+{{cal(items=[
+  ["20 Feb, 7.30pm", "2023-02-20", "SPIKE Prime Information Session (via Zoom)"],
+  ["1 Apr, 1.00pm to 4.30pm", "2023-04-01", "Term 1 Workshop"],
+  ["(TBA)", "2023-05-01", "Term 2 Workshop"],
+  ["9 Jun, 9.00pm", "2023-06-09", "Registrations Close"],
+  ["28-29 Aug", "2023-08-29", "NSW State Competition"],
+])}}
 
 ## 🤖 SPIKE Prime Challenge
 
