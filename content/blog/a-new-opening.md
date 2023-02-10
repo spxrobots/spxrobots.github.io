@@ -1,5 +1,6 @@
 +++
 title = "A New OPENing"
+draft = true
 +++
 
 [![](/img/ply-robo-baseplates.jpeg)](/img/ply-robo-baseplates.jpeg)
