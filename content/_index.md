@@ -11,11 +11,16 @@ images = [
 
 ## Welcome to the SPX Robotics Club Homepage!
 
-{{biglink(
+* {{biglink(
   emoji = "📸"
   name = "Featured Webpage: SPX Robots Hall of Fame"
   href = "/wiki/hof"
-)}}
+  )}}
+* {{biglink(
+  emoji = "ℹ️"
+  name = "RoboCup Information"
+  href = "/prog/robocup"
+  )}}
 
 <!-- {{ cal(items=[
   ["Week 1", "2022-10-13", "Projects"],
