@@ -1,6 +1,5 @@
 +++
 title = "First Lego League Challenge"
-aliases = ["/fll"]
 +++
 
 ## 📅 Calendar
