@@ -1,5 +1,15 @@
 +++
 title = "RoboCup Competition"
+
+[extra.gallery.spike]
+images = [
+  { url = "/img/SPIKE.jpeg" },
+]
+
+[extra.gallery.soccer]
+images = [
+  { url = "/img/cb-2018-standby.jpeg" },
+]
 +++
 
 ## 📅 Calendar
@@ -23,6 +33,8 @@ title = "RoboCup Competition"
   href = "https://www.robocupjunior.org.au/wp-content/uploads/2023/02/Spike-Prime-Information-Pack-2023.pdf"
   )}}
 
+{{ gallery(name="spike") }}
+
 ## ⚽ Soccer
 
 * {{biglink(
@@ -35,3 +47,5 @@ title = "RoboCup Competition"
   name = "Rules 2023"
   href = "https://www.robocupjunior.org.au/wp-content/uploads/2023/02/Official-2023-RCJA-Soccer-Rules-SSTC.pdf"
   )}}
+
+{{ gallery(name="soccer") }}
