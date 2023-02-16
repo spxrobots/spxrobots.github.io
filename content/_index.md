@@ -17,10 +17,10 @@ images = [
   href = "/wiki/hof"
   )}}
 * {{biglink(
-  emoji = "ℹ️"
-  name = "RoboCup Information"
-  href = "/prog/robocup"
-  )}}
+  emoji = "📜"
+  name = "Club Permission Note 2023"
+  href = "/doc/club-permission-note-2023.pdf"
+)}}
 
 <!-- {{ cal(items=[
   ["Week 1", "2022-10-13", "Projects"],
@@ -69,12 +69,7 @@ images = [
 
 ## 📦 Previous Work
 
-* EV3 Robotic Hand
-* Quadcopter
-* Elephant
-* Dot Matrix Welcome Display
-* Snake Game
-* RoboCup Opens Competition Robots
+See the [Robotics Club Hall of Fame Wiki Page](/wiki/hof).
 
 ## 🗃️ Robots Storage
 

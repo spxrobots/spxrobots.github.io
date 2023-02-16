@@ -2,6 +2,11 @@
 
 {% block main %}
 
+<blockquote>
+  <p>SPXRobots Blog</p>
+  <p>{{ page.description }}</p>
+</blockquote>
+
 {{ page.content | safe }}
 
 {% if page.extra.see_also and page.extra.see_also | length > 0 %}

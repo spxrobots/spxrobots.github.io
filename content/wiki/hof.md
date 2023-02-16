@@ -27,4 +27,13 @@ images = [
 ]
 +++
 
+<!-- toc -->
+
+## Works not Photographed
+
+* Dot Matrix LED Welcome Display
+* Dot Matrix Snake Game with Controller
+
+## Image Gallery
+
 {{ gallery(name="hall_of_fame") }}

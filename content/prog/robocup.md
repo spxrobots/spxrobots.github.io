@@ -22,21 +22,6 @@ images = [
   ["28-29 Aug", "2023-08-29", "NSW State Competition"],
 ])}}
 
-## 🤖 SPIKE Prime Challenge
-
-* {{biglink(
-  emoji = "🏡"
-  name = "Challenge Home Page"
-  href = "https://www.robocupjunior.org.au/spike-challenge/"
-  )}}
-* {{biglink(
-  emoji = "ℹ️"
-  name = "Information Pack"
-  href = "https://www.robocupjunior.org.au/wp-content/uploads/2023/02/Spike-Prime-Information-Pack-2023.pdf"
-  )}}
-
-{{ gallery(name="spike") }}
-
 ## ⚽ Soccer
 
 * {{biglink(
@@ -51,3 +36,18 @@ images = [
   )}}
 
 {{ gallery(name="soccer") }}
+
+## 🤖 SPIKE Prime Challenge
+
+* {{biglink(
+  emoji = "🏡"
+  name = "Challenge Home Page"
+  href = "https://www.robocupjunior.org.au/spike-challenge/"
+  )}}
+* {{biglink(
+  emoji = "ℹ️"
+  name = "Information Pack"
+  href = "https://www.robocupjunior.org.au/wp-content/uploads/2023/02/Spike-Prime-Information-Pack-2023.pdf"
+  )}}
+
+{{ gallery(name="spike") }}
