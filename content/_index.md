@@ -51,6 +51,10 @@ images = [
   * Images Images Images
 * EV3 First Lego League - Superpowered Challenges
 * and more! (add your project here)
+* Lego Soccer Robot
+* Arduino Kit Projects
+* Drink Delivery Drone
+* Robot Dog
 
 ## 📖 Available Projects
 
