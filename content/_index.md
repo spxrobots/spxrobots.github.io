@@ -35,6 +35,13 @@ images = [
 
 ---
 
+## Open Day
+
+* Year 8
+  * Escape the Egg
+  * Driving Challenge
+  * Line Following
+
 ## 👷‍♂️ Current Projects
 
 * GitLab Project Code Repository - Pilot Programme
