@@ -35,7 +35,7 @@ images = [
 
 ---
 
-## Open Day
+## Open Day (18th March 2023)
 
 * Year 8
   * Escape the Egg
