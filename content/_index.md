@@ -42,6 +42,14 @@ images = [
   * Driving Challenge
   * Line Following
 
+## Software
+
+We are working to make the following software available to students.
+
+* [ ] Arduino IDE
+* [ ] Pixymon Software
+* [ ] VS Code
+
 ## 👷‍♂️ Current Projects
 
 * GitLab Project Code Repository - Pilot Programme
