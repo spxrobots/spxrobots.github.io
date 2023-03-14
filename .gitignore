@@ -19,3 +19,4 @@ font/
 public/
 static/
 templates/gitrev.html
+.vscode/
