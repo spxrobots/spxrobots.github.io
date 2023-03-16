@@ -47,7 +47,7 @@ images = [
 We are working to make the following software available to students.
 
 * [ ] Arduino IDE
-* [ ] Pixymon Software
+* [x] Pixymon Software
 * [ ] VS Code
 
 ## 👷‍♂️ Current Projects
