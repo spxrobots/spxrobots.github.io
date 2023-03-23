@@ -15,7 +15,7 @@
           <ol>
           {% for h4 in h3.children %}
             <li>
-              <a href="{{ h3.permalink | safe }}">{{ h4.title }}</a>
+              <a href="{{ h4.permalink | safe }}">{{ h4.title }}</a>
             </li>
           {% endfor %}
           </ol>

@@ -1,7 +1,14 @@
-{% if width is undefined %}{% set width=250 %}{% endif %}
-{% if height is undefined %}{% set height=250 %}{% endif %}
-{% set image = resize_image(path=src, width=width, height=height, op="fit") %}
+{%- if width is undefined %}{% set width=250 %}{% endif -%}
+{%- if height is undefined %}{% set height=250 %}{% endif -%}
+{%- if src is starting_with("http:") or src is starting_with("https:") -%}
 <figure class='thumb {% if align and align == "left" %}floatleft{% else %}floatright{% endif %}'>
-  <a href="{{ src }}" target="_blank"><img src="{{ image.url }}"/></a>
+  <a href="{{ src }}" target="_blank"><img src="{{ src }}" width="{{ width }}" height="{{ height }}"/></a>
   {% if cap %}<figcaption>{{ cap | safe }}</figcaption>{% endif %}
 </figure>
+{%- else -%}
+{%- set image = resize_image(path=src, width=width, height=height, op="fit") -%}
+<figure class='thumb {% if align and align == "left" %}floatleft{% else %}floatright{% endif %}'>
+  <a href="{{ src }}" target="_blank"><img src="{{ image.url }}" width="{{ width }}" height="{{ height }}"/></a>
+  {% if cap %}<figcaption>{{ cap | safe }}</figcaption>{% endif %}
+</figure>
+{%- endif -%}

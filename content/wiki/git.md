@@ -76,13 +76,6 @@ git branch --delete patch
 
 ## Best Practices
 
-When submitting code for `spxrobots.org`, run the following command in the repository at init:
-
-```sh
-git config user.name "Student"
-git config user.email ""
-```
-
 ## Installing Git
 
 * [Git for Windows / GitBash Downloads Page](https://git-scm.com/downloads)
@@ -91,3 +84,9 @@ git config user.email ""
   * Override branch name to `main`
   * Git from command line and 3rd party software
   * Use bundled OpenSSH
+
+```sh
+git config --global user.name="Student"
+git config --global user.email=""
+git config --global http.sslVerify="false"
+```
