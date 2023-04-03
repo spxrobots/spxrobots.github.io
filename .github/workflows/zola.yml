@@ -1,0 +1,65 @@
+name: Deploy Pages with Zola
+
+on:
+  push:
+    branches: [main]
+  # Allow manually running from Actions tab,
+  # but don't specify any extra configuration.
+  workflow_dispatch:
+
+# Allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Don't allow overlapping deployments,
+# only deploy the latest.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup PATH
+        run: |
+          export PATH="$PWD:$PATH"
+      - name: Setup HTMLQ
+        run: |
+          wget "https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz"
+          tar -xzf "htmlq-x86_64-linux.tar.gz"
+          chmod +x htmlq
+      - name: Setup Zola
+        run: |
+          wget "https://github.com/getzola/zola/releases/download/v0.17.1/zola-v0.17.1-x86_64-unknown-linux-gnu.tar.gz"
+          tar -xzf "zola-v0.17.1-x86_64-unknown-linux-gnu.tar.gz"
+          chmod +x zola
+      - name: Pull in GDrive Assets
+        run: |
+          chmod +x fetch-assets.bash
+          ./fetch-assets.bash
+      - name: Run Pre-Build Configuration
+        run: |
+          chmod +x prebuild.bash
+          ./prebuild.bash
+      - name: Build with Zola
+        run: |
+          ./zola build
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: public/
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
