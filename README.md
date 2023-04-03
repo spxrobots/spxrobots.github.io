@@ -1,12 +1,13 @@
-# SPX Robotics GitLab
+# SPX Robotics Website Git Repository
 
-* GitLab
+* GitHub
   * Code storage
   * Website hosting
 * Google Drive
   * Image storage (max 50 entries per folder layer)
 * Clouflare (currently with Oli - need to transfer)
-    * Domain for spxrobots.org
+  * Domain for spxrobots.org
+  * SSL/TLS must be set to strict
   * `staff/git` email groups
 
 # !!! IMPORTANT PRIVACY NOTICE !!!
