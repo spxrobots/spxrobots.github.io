@@ -17,9 +17,9 @@ images = [
   href = "/wiki/hof"
   )}}
 * {{biglink(
-  emoji = "📜"
-  name = "Club Permission Note 2023"
-  href = "/doc/club-permission-note-2023.pdf"
+  emoji = "✒️"
+  name = "GitHub Implementation RFC"
+  href = "/rfc/git"
 )}}
 
 <!-- {{ cal(items=[
