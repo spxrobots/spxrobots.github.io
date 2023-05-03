@@ -28,9 +28,9 @@ fetch_folder () {
   # <ID> \t <NAME> \t <FOLDERTYPE>
   local files="$(
     paste \
-      <(echo "$gfolder\n" | htmlq -a data-id '.iZmuQc>c-wiz>div') \
-      <(echo "$gfolder\n" | htmlq -a data-tooltip '.iZmuQc>c-wiz>div div[data-tooltip]') \
-      <(echo "$gfolder\n" | htmlq '.iZmuQc>c-wiz>div' | is_folder)
+      <(echo "$gfolder\n" | htmlq --attribute data-id '[data-id]') \
+      <(echo "$gfolder\n" | htmlq --text '.KL4NAf') \
+      <(echo "$gfolder\n" | htmlq --attribute aria-label '.KL4NAf' | is_folder)
   )"
 
   if [ "$n_files" = 0 ]
