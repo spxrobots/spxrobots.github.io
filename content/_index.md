@@ -35,13 +35,6 @@ images = [
 
 ---
 
-## Open Day (18th March 2023)
-
-* Year 8
-  * Escape the Egg
-  * Driving Challenge
-  * Line Following
-
 ## Software
 
 We are working to make the following software available to students.
