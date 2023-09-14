@@ -42,3 +42,11 @@ Ports A-D are used for motor output. Default motor ports are B (left) and C (rig
 ```
 [ move (right: 100) for (1) rotations at (50%) speed ]
 ```
+
+## Construction
+
+* {{ biglink(
+  emoji="🏗️",
+  name="Building Instructions: Driving Base",
+  href="/doc/ev3-instructions-driving-base.pdf")
+}}
